@@ -4,13 +4,12 @@ Program:
 
 1. Domáca úloha: zvyšné príklady z prijímačkového testu
 2. Rôzne postupnosti
-3. Príklady
 
 ### 0. Úvod
 
 **Tento text** a texty k nasledujúcim cvičeniam budú vyložené - ako pdf - v Github repozitári https://github.com/PKvasnick/Erik. Odporúčam Github Desktop (na Windows) pre uloženie a synchronizáciu repozitára. 
 
-**Telekonferencia** Používame rovnaký link na moju videomiestnosť na Doucma.sk: https://www.doucma.sk/call/408896-peter
+**Telekonferencia** Prešli sme na SpeakApp, https://speakapp.link . Link na meeting posielam pred každou lekciou, pretože je premenlivý. 
 
 ### 1. Domáca úloha
 
@@ -50,34 +49,41 @@ Majme postupnosť $x_{n+1} = a\cdot x_n(1-x_n)$. Ako sa správa pre rôzne $a$?
 
 ### 2. Všelijaké číselné rady
 
-#### Aritmetický rad
+bude nabudúce, nestihli sme
 
-$$
-a_n = a_0 + nd, \quad n = 0, 1, \dots
-$$
+---
 
-Aký je súčet prvých n členov?
+### Nová domáca úloha do 7/7
 
-**Gaussova finta:**
-$$
-S_n =& a_0 + 0d &+ a_0 + 1d &+ a_0 + 2d &+ \dots &+a_0 + nd \\
-S_n =& a_0 + nd &+ a_0 + (n-1)d &+ a_0 + (n-2)d &+ \dots &+ a_0 +0d \\
-2S_n =& 2a_0 + nd &+2a_0 + nd &+ 2a_0 + nd &+ \dots &+ 2a_0 + nd 
-$$
-a posledný súčet ide sčítať ľahko, pretože v ňom máme samé rovnaké členy. 
+#### Zostávajúci prijímačkový príklad
 
-#### Geometrický rad:
+![image-20230701151743850](C:/Users/kvasn/Documents/GitHub/Erik/img/image-20230701151743850.png)
 
-$$
-a_n = a_0 q^n
-$$
+Vieme, že jedno riešenie je X=10, Y=3. Treba nájsť iné riešenie.
 
-Súčet: rekurentný vzťah:
-$$
-S_n = a_0 + a_0q + a_0q^2 + \dots = a_0 + qS_{n-1}
-$$
+#### Druhá časť domácej úlohy sú stále tieto príklady:
 
+**Príklad 1**
+
+Postupnosť začína číslami 1, 3, 6, 10. Doplň ďalšie členy. 
+
+Ako u väčšiny príkladov, ktoré budeme riešiť, nezaujíma nás až tak veľmi konkrétny príklad, ale stratégie a postupy, ktoré sa dajú použiť. 
+
+**Príklad 2**
+
+Platí
+$$
+\sqrt{25} = 2 + 5 - 2 \quad (\textrm{odčítame dvojku od druhej odmocniny}) \\
+= 5\\
+\sqrt{64} = 6 + 4 - 2 = 8\\
+\sqrt{196} = 1 + 6 + 9 - 2 = 14\\
+\sqrt{289} = 2 + 8 + 9 - 2 = 17
+$$
+Je toto nová fantastická finta na odmocňovanie? Ako to funguje? Pre aké najväčšie číslo to môže platiť?
+
+**Príklad 3**
+
+Majme postupnosť $x_{n+1} = a\cdot x_n(1-x_n)$. Ako sa správa pre rôzne $a$?
 
 ### 
-
 
