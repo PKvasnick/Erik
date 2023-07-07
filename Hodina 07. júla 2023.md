@@ -124,11 +124,11 @@ k^3 - (k-1)^3 = k^3 - k^3 + 3k^2 - 3k + 1 = 3k^2 - 3k + 1
 $$
 a vypíšeme rovnice pre $k$ od 1 do $n$:
 $$
-1^2 &-& 0^2 &=& 3\cdot 1^2 &-& 3\cdot 1 + 1 \\
-2^2 &-& 1^2 &=& 3\cdot 2^2 &-& 3\cdot 2 + 1 \\
-3^2 &-& 2^2 &=& 3\cdot 3^2 &-& 3\cdot 3 + 1 \\
+1^3 &-& 0^3 &=& 3\cdot 1^2 &-& 3\cdot 1 + 1 \\
+2^3 &-& 1^3 &=& 3\cdot 2^2 &-& 3\cdot 2 + 1 \\
+3^3 &-& 2^3 &=& 3\cdot 3^2 &-& 3\cdot 3 + 1 \\
 \dots \\
-n^2 &-& (n-1)^2 &=& 3\cdot n^2 &-& 3\cdot n + 1 \\
+n^3 &-& (n-1)^3 &=& 3\cdot n^2 &-& 3\cdot n + 1 \\
 $$
 Teraz tieto rovnice sčítame. Naľavo nám ostane iba $n^3$, zatiaľ čo napravo dostaneme lineárnu kombináciu súčtov $S_n^{(2)}$,  $S_n^{(1)}$ a $S_n^{(0)}$.  Z nich súčet $S_n^{(2)}$ je to, čo chceme vypočítať, takže ho zo vzťahu vyjadríme:
 $$
@@ -138,7 +138,7 @@ S_n^{(2)} = \frac{1}{3}\left(n^3 + 3\frac{n(n+1)}{2} - n \right) \\
 $$
 Podobne, ak vypíšeme rovnice pre $k^4 - (k-1)^4$ od 1 do n, môžeme odvodiť vzťah pre $S_n^{(4)}$:
 $$
-S_n^{(4)} = \left( \frac{n(n+1}{2}\right)^2
+S_n^{(3)} = \left( \frac{n(n+1}{2}\right)^2
 $$
 
 ---
@@ -251,7 +251,7 @@ S_n = a_0\frac{1-q^n}{1-q}
 $$
 Pre n rastúce do nekonečna má rad súčet pre $|q|\lt 1$, a tento súčet je 
 $$
-S = \frac{1}{1-q}
+S = \frac{a_0}{1-q}
 $$
 **Príklad**: Pre $a_0=1,\;q=1/2$  máme
 $$
@@ -275,6 +275,8 @@ $$
 ---
 
 ### Riešenie domácej úlohy
+
+**Toto riešenie nie je správne!**
 
 Toto je iný prístup, ako efektívne riešiť úlohu o plochách X a Y.
 
