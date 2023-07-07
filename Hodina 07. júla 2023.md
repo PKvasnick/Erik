@@ -3,7 +3,9 @@
 Program:
 
 1. Domáca úloha: zostávajúci príklad z prijímačkového testu a príklady z 1. lekcie
-2. Rôzne postupnosti a číselné rady
+2. Niekoľko príkladov na zahriatie a pozdvihnutie mysli.
+3. Rôzne postupnosti a číselné rady
+4. Domáca úloha (nová)
 
 ### 0. Úvod
 
@@ -43,7 +45,11 @@ Je toto nová fantastická finta na odmocňovanie? Ako to funguje? Pre aké najv
 
 Majme postupnosť $x_{n+1} = a\cdot x_n(1-x_n)$. Ako sa správa pre rôzne $a$?
 
-### 2. Príklad na deliteľnosť
+### 2. Príklady
+
+Toto sú sondovacie príklady, ktoré slúžia pre všeobecné osvietenie a chcem tiež pomocou nich zistiť, čomu ešte sa treba venovať. 
+
+**1. Príklad na deliteľnosť**
 
 **Tvrdenie** Všetky čísla tvaru ABABAB sú deliteľné 37.
 
@@ -54,7 +60,23 @@ Dôkaz?
 - Ako to vlastne budeme dokazovať?
 - Čo znamená, že tvrdenie dokážeme?
 
-### 2. Všelijaké číselné rady
+**2. Exponenciálna rovnica**
+
+Nájdi všetky x, ktoré sú riešeniami rovnice
+$$
+2^{5x} = 3^{2-x}
+$$
+**3. Kvadratická rovnica**
+
+Nech M, N sú korene kvadratickej rovnice
+$$
+x^2 + 6x + 4 =0.
+$$
+Vypočítajte $M^2 + N^2$.
+
+---
+
+### 3. Všelijaké číselné rady
 
 #### Aritmetický rad
 
@@ -156,6 +178,53 @@ A_n = 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \frac{1}{5} -\frac{1}{6} +\f
 $$
 sa od harmonického radu líši striedajúcimi sa znamienkami. Tento rad konverguje a pre rastúce n sa hodnota súčtu blíži k $\ln 2$.
 
+#### Ďalšie mocninné rady so záporným k
+
+Nekonečný rad
+$$
+S_{\infty}^{-2} \equiv 1 + \frac{1}{2^2} + \frac{1}{3^2} + \frac{1}{4^2} + \dots = \sum_{n=1}^{\infty} \frac{1}{n^2}
+$$
+má súčet $\pi^2/6$. Tento výsledok pochádza od Leonarda Eulera, a je prekvapujúci tým, že v ňom figuruje $\pi$. Okrem toho nie je úplne ľahké ho získať. 
+
+Čo môžeme ukázať ľahko je, že súčet radu existuje a nachádza sa medzi 1 a 2. 
+
+Uvažujme "teleskopický" rad 
+$$
+S_T \equiv \frac{1}{1\cdot 2} + \frac{1}{2\cdot 3} + \frac{1}{3\cdot 4} + \dots = \sum_{n=1}^{\infty} \frac{1}{n(n+1)}
+$$
+Tento rad sa dá prekvapujúco ľahko sčítať. Stačí použiť jednoduchú fintu, ktorá sa normálne vyučuje až na vysokej škole v kurze matematickej analýzy - rozklad na parciálne zlomky:
+
+Pokúsme sa výraz $\frac{1}{n(n+1)}$ vyjadriť v tvare $\frac{A}{n} + \frac{B}{n+1}$:
+$$
+\frac{1}{n(n+1)} = \frac{A}{n} + \frac{B}{n+1} \quad |\cdot n(n+1) \\
+1 = A(n+1) + Bn
+$$
+Toto vyzerá ako jedna rovnica pre dve neznáme A a B. Pretože ale táto rovnosť má platiť pre všetky n=1, 2, ..,  sú to v skutočnosti dve rovnice - pre členy obsahujúce n a pre konštantné členy:
+$$
+1 = A(n+1) + Bn = (A+B)n + A
+$$
+Člen pri n musí byť nula a konštantný člen musí byť 1, teda $A = 1, B = -1$ a 
+$$
+\frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}
+$$
+čo možno ľahko overiť  úpravou pravej strany.  Použitím tohto vzťahu možno nekonečný rad $S_T$ prepísať do tvaru, v ktorom sa dá triviálne sčítať:
+$$
+S_T = \sum_{n=1}^{\infty} \frac{1}{n(n+1)} = \sum_{n=1}^{\infty} \left( \frac{1}{n} - \frac{1}{n+1} \right) \\
+= 1 - \frac{1}{2} +\frac{1}{2} - \frac{1}{3} + \frac{1}{3} - \frac{1}{4} +\frac{1}{4} \dots = 1
+$$
+Tento rad sa vyskytuje celkom často. Teraz pomocou neho ukážeme, že rad $S_{\infty}^{-2}$ konverguje k hodnote medzi 1 a 2:
+$$
+\frac{1}{2^2} \le \frac{1}{1 \cdot 2},\\
+\frac{1}{3^2} \le \frac{1}{2 \cdot 3},\\
+\frac{1}{4^2} \le \frac{1}{3 \cdot 4}, \\
+\vdots
+$$
+a teda 
+$$
+1 + \frac{1}{2^2} + \frac{1}{3^2} + \frac{1}{4^2} \dots \le 1 + \frac{1}{1 \cdot 2} + \frac{1}{2 \cdot 3} + \frac{1}{3 \cdot 4} + \dots = 2
+$$
+čo sme si predsavzali ukázať. 
+
 ---
 
 #### Geometrický rad:
@@ -207,6 +276,8 @@ $$
 
 ### Riešenie domácej úlohy
 
+Toto je iný prístup, ako efektívne riešiť úlohu o plochách X a Y.
+
 Začali sme tým, že sme si označili úseky a, b, c, d, e, a vieme pre ne získať hromadu rovníc z údajov v obrázku. Treba skúsiť vyjadriť X, Y a získať nejaký vzťah medzi nimi. 
 
 Skúsme rýchlejšie riešenie:
@@ -225,7 +296,7 @@ Teda ešte ďalšie riešenie je X=9, Y=4.
 
 ---
 
-### Balenie pomarančov v osemrozmernom priestore
+### Kuriozita: Balenie pomarančov v osemrozmernom priestore
 
 <img src="img\F7960A68-2631-4B11-99F139DAAFD92CF4_source.webp" alt="F7960A68-2631-4B11-99F139DAAFD92CF4_source" style="zoom: 67%;" />
 
@@ -245,3 +316,6 @@ Veľa úloh strjového učenia (machine learning) spočíva v tomto: Máme nejak
 Tento obrázok dobre ilustruje, čo som písal vyššie, ale v skutočnosti má ilustrovať ďalšie dôležité použitie poznatkov o najefektívnejšom pokrytí priestoru guľami.
 
 Viac v https://blogs.scientificamerican.com/roots-of-unity/why-you-should-care-about-high-dimensional-sphere-packing/
+
+
+
