@@ -258,7 +258,7 @@ Dôkaz vykonáme matematickou indukciou.
 
 ​		a.  $x^3 + x = 350$
 
-​		b.  $x^3 - 9x^2 + 27c - 27 = 0$
+​		b.  $x^3 - 9x^2 + 27x - 27 = 0$
 
 3. Riešte rovnicu $8^x 27^x = 6 \sqrt[5]{6}$
 
