@@ -4,7 +4,7 @@ Program:
 
 1. Domáca úloha (z minula)
 2. Niekoľko príkladov na zahriatie a pozdvihnutie mysli.
-3. Dôkazy. Matematická indukcia
+3. Dôkazy. Princíp dobrého usporiadania.
 4. Domáca úloha (nová)
 
 ### 0. Úvod
@@ -257,7 +257,7 @@ Z týchto zápisov je jednoznačne vidno, aké hodnoty nadobúdajú hodnoty v ra
 
 Pre obecné n dokážeme tvrdenie sporom s využitím princípu dobrého usporiadania: Nech C je množina prirodzených čísel, pre ktoré tvrdenie neplatí, teda 
 $$
-C = \{n \in N : 1 + 2 + \dots + n = \frac{n(n+1)}{2}\}
+C = \{n \in N : 1 + 2 + \dots + n \ne  \frac{n(n+1)}{2}\}
 $$
 Negácia tvrdenia znamená, že C je neprázdna množina. Ako taká musí mať podľa WOP minimálny prvok, ktorý označíme c. c je teda najmenšie číslo, pre ktoré tvrdenie P(n) neplatí. Pretože pre n=0 a n=1 tvrdenie platí, musí byť $c>1$ . Pretože c je najmenší prvok množiny c, musí tvrdenie platiť pre $c-1>0$, teda 
 $$
