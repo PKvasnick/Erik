@@ -73,7 +73,7 @@ $$
 
 Z toho vidíme, že sme našli jediný reálny koreň rovnice, pretože polynóm druhého stupňa vpravo nemá reálne korene. 
 
-Koreň $x=7$ dostaneme tiež pomocou vety o racionálnom koreni. Pretože $q=1$,  $p = 350 = 2\cdot 5^2 \cdot 7$, možné racionálne korene sú $\{\pm1, \pm2, \pm5, \pm7, \pm10, \pm14, \pm20, \pm25, \pm35, \pm50, \pm70, \pm175, \pm350\}$. Vzhľadom na tvar rovnice môžeme ľahko vylúčiť malé $(1, 2, 5)$, ako aj veľké $(10, 14, \dots)$ korene. 
+Koreň $x=7$ dostaneme tiež pomocou vety o racionálnom koreni. Pretože $q=1$,  $p = 350 = 2\cdot 5^2 \cdot 7$, možné racionálne korene sú $\{\pm1, \pm2, \pm5, \pm7, \pm10, \pm14, \pm25, \pm35, \pm50, \pm70, \pm175, \pm350\}$. Vzhľadom na tvar rovnice môžeme ľahko vylúčiť malé $(1, 2, 5)$, ako aj veľké $(10, 14, \dots)$ korene. 
 
 **Riešenie b.**
 
