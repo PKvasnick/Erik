@@ -89,7 +89,7 @@ Poznámka. Pre n=1 dostávame zlatý rez, pre ostatné n sa tieto čísla nazýv
 
 **Riešenie**
 
-Aby sme dali nekonečnému reťazovému zlomku presný zmysel, vyjadríme reťazový zlomok ako limitu postupnosti:
+Aby sme dali nekonečnému reťazovému zlomku presný zmysel, vyjadríme ho  ako limitu postupnosti:
 $$
 A_{k+1}^{(n)} = n + \frac{1}{A_k^{(n)}}
 $$
@@ -135,7 +135,7 @@ Vyriešme niekoľko okrajových prípadov, aby sme mali poriadok pre malé čís
 | 1             |      | 4    | 6    | 20   |
 | 2             |      | 32   | 34   | 48   |
 
-Ani jedno číslo v tabuľke nie je treťou mocninou, takže bezpečne vieme, že tvrdenie neplatí pre $a, b \le 2, \, c \le 48$. Pre ostatné $a, b,c$ dokážeme tvrdenie sporom s použitím princípu dobrého usporiadania. Označme C množinu hodnôt $c$, pre ktoré existuje nejaká dvojica prirodzených čísel $a, b$ tak, že $a, b, c$ je riešením rovnice. Pre dôkaz sporom predpokladáme, že množina C je neprázdna a teda podľa princípu dobrého usporiadania má minimálny prvok $c_0$. Podľa predpokladu existujú čísla $a_0, b_0$ tak, že $4a_0^3+2b_0^3 = c_0^3$. Pretože ľavá strana rovnice je párna, musí byť párne $c_0^3$ a teda aj samotné $c_0$, $c_0 = 2c_1$, pričom $c_1$ je nejaké prirodzené číslo. Z prípravy vieme, že $c_0>48$, a teda $c_1\ge 25$. Dosadíme:
+Ani jedno číslo v tabuľke nie je treťou mocninou, takže bezpečne vieme, že tvrdenie neplatí pre $a, b \le 2, \, c \le \sqrt{48} < 4$. Pre ostatné $a, b,c$ dokážeme tvrdenie sporom s použitím princípu dobrého usporiadania. Označme C množinu hodnôt $c$, pre ktoré existuje nejaká dvojica prirodzených čísel $a, b$ tak, že $a, b, c$ je riešením rovnice. Pre dôkaz sporom predpokladáme, že množina C je neprázdna a teda podľa princípu dobrého usporiadania má minimálny prvok $c_0$. Podľa predpokladu existujú čísla $a_0, b_0$ tak, že $4a_0^3+2b_0^3 = c_0^3$. Pretože ľavá strana rovnice je párna, musí byť párne $c_0^3$ a teda aj samotné $c_0$, $c_0 = 2c_1$, pričom $c_1$ je nejaké prirodzené číslo. Z prípravy vieme, že $c_0>3$, a teda $c_1 \ge 2$. Dosadíme:
 $$
 4a_0^3 + 2b_0^3 = (2c_1)^3 = 8c_1^3 \implies 2a_0^3 + b_0^3 = 4c_1^3
 $$
@@ -147,7 +147,7 @@ a teda aj $a_0$ musí byť párne, $a_0 = 2a_1$. Opäť vieme, že $a_0>2$ a ted
 $$
 (2a_1)^3 + 4b_1^3 = 2c_1^3 \implies 4a_1^3 + 2b_1^3 = c_1^3
 $$
-a teda trojica $(a_1, b_1, c_1)$ je riešením rovnice a $c_1$ podľa práva patrí do C. Lenže spoľahlivo vieme, že $c_0 >c_1>0$, pretože obe čísla sú zaručene väčšie ako 0, a teda minimálnym prvkom C nie je $c_0$, ale $c_1$. To je rozpor s predpokladom, že množina C má minimálny prvok: pre každý minimálny prvok vieme zostrojiť menší prvok, ktorý takisto patrí do C. Lenže minimálny prvok množiny C musí byť $>48$, a teda dostávame rozpor: množina C nemôže mať minimálny prvok. Jediný prípad, kedy tento rozpor nenastane je, keď je množina C prázdna a teda keď platí dokazované tvrdenie: rovnica nemá riešenie v množine prirodzených čísel. 
+a teda trojica $(a_1, b_1, c_1)$ je riešením rovnice a $c_1$ podľa práva patrí do C. Lenže spoľahlivo vieme, že $c_0 >c_1>0$, pretože obe čísla sú zaručene väčšie ako 0, a teda minimálnym prvkom C nie je $c_0$, ale $c_1$. To je rozpor s predpokladom, že množina C má minimálny prvok: pre každý minimálny prvok vieme zostrojiť menší prvok, ktorý takisto patrí do C. Lenže minimálny prvok množiny C musí byť $>\sqrt[3]{48}$, a teda dostávame rozpor: množina C nemôže mať minimálny prvok. Jediný prípad, kedy tento rozpor nenastane je, keď je množina C prázdna a teda keď platí dokazované tvrdenie: rovnica nemá riešenie v množine prirodzených čísel. 
 
 ---
 
