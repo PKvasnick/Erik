@@ -95,20 +95,18 @@ $$
 $$
 
 2. Druhé zovšeobecnenie: ako spočítať racionálne aproximácie tretej odmocniny? 
-   Majme dve postupnosti $a_n, b_n$ definované takto:
+   Definujme
 
 $$
-a_n = a_{n-1}^2 + a_{n-1} + pb_{n-1} \\
-b_n = a_{n-1}^2 + a_{n-1} + b_{n-1}
+x_n = \frac{a_n}{b_n} \\
 $$
 
-Potom platí
+Potom
 $$
-\lim\limits_{n \rightarrow \infty} \frac{a_n}{b_n} = \sqrt[3]{p}
+x_{n+1} = \frac{x_n^2 + x_n + b}{x_n^1 + x_n + 1}
 $$
 
-- Ako toto dokázať?
-- Ako by to bolo so štvrtou, piatou, ... odmocninou?
+je bližšie k $\sqrt[3]{b}$ než $x_n$.
 
 **Stredové a obvodové uhly**
 
@@ -117,7 +115,7 @@ Toto sme posledne zistili, že treba prejsť, tak poďme: Tvrdenie, ktoré chcem
 1. Obvodové uhly zodpovedjúce rovnakej tetive sú rovnaké
 2. Obvodové úhly majú veľkosť polovice príslušného stredového uhla.
 
-<img src="C:\Users\kvasn\Documents\GitHub\Erik\img\Thales_1.png" alt="image-20230905215957180" style="zoom:60%;" />
+<img src="img\Thales_1.png" alt="image-20230905215957180" style="zoom:60%;" />
 
 Začneme jednoduchým prípadom, keď rameno vymedzujúce obvodový uhol prechádza stredom kružnice. V našom prípade máme obvodový uhol $\alpha \equiv \angle BAC$ a zodpovedajúci stredový uhol $\beta \equiv \angle BSC$. Trojuholník BSC je rovnoramenný, takže $\angle SBC = \angle SCB = 1/2(\pi - \beta)$.  Platí, že $\angle ASC = \pi - 2\alpha$, ale na druhej strane $\angle ASC + \beta = \pi$, takže dostávame 
 
@@ -126,19 +124,19 @@ Začneme jednoduchým prípadom, keď rameno vymedzujúce obvodový uhol prechá
 
 Druhé tvrdenie je Thalésova veta: obvodové uhly nad priemerom sú pravé. Prvé tvrdenie sme dokázali iba v špeciálnom prípade, takže ho potrebujeme zovšeobecniť.
 
-<img src="C:\Users\kvasn\Documents\GitHub\Erik\img\Thalse_2.png" alt="image-20230905223917843" style="zoom:60%;" />
+<img src="img\Thalse_2.png" alt="image-20230905223917843" style="zoom:60%;" />
 
 Zjavne aj v tomto prípade tvrdenie platí, z obrázku ľahko vidíme, že $\beta + \gamma = 2\alpha + 2\delta$. Ešte musíme tvrdenie dokázať v prípade, že vrchol stredového uhla neleží vnútri obvodového uhla. 
 
 Tretia situácia, ktorú si preberieme, je vrchol obvodového uhla na opačnej strane tetivy než vrchol stredového uhla. Dokážeme, že v tomto prípade tiež platí $\beta = 2\alpha$. 
 
-<img src="C:\Users\kvasn\Documents\GitHub\Erik\img\Thales_3.png" alt="image-20230905231334059" style="zoom:60%;" />
+<img src="img\Thales_3.png" alt="image-20230905231334059" style="zoom:60%;" />
 
 Najprv zaznamenáme, že $|AS|=|BS|=|CS|=r$.  Trojuholníky ASB , BSC, ASC sú teda všetky rovnoramenné. Označme $\alpha_1 = \angle ABS,\,\beta_1 \equiv \angle ASB = \pi - 2\alpha_1$ a analogicky $\alpha_2 = \angle SBC,\,\beta_2 \equiv \angle BSC = \pi - 2\alpha_2$. Odtiaľ $\beta_1 + \beta_2 = 2\pi - 2\alpha_1 - 2\alpha_2$ a teda $\beta \equiv 2\pi - \beta_1 - \beta_2 = 2(\alpha_1 + \alpha_2) = 2\alpha$, čím sme dokázali platnosť tvrdenia pre opačnú stranu tetivy. 
 
 Ostáva nám posledný prípad, kedy vrchol obvodového uhla leží na rovnakej strane tetivy ako stred kružnice, ale stred kružnice sa nachádza mimo obvodového uhla.  Používame rovnaký obrázok, iba sme veci premenovali. 
 
-<img src="C:\Users\kvasn\Documents\GitHub\Erik\img\Thales_4.png" alt="image-20230905235129185" style="zoom:60%;" />
+<img src="img\Thales_4.png" alt="image-20230905235129185" style="zoom:60%;" />
 
 Označme $\beta_1 \equiv \angle ASB$ a z predchádzajúceho prípadu vieme, že $\beta + \beta_1 = 2\pi - 2\angle ABC$. Označme ďalej $\gamma \equiv \angle ACS = \angle CAS = 1/2(\pi - \beta - \beta_1) = \angle ABC - \pi/2$. Označme ďalej $\delta_1 \equiv \angle ABS = \alpha + \gamma$,  $\delta_2 \equiv \angle SBC = \pi/2 - \beta/2$. Platí $\angle ABC = \delta_1 + \delta_2 = \alpha + \gamma + \pi/2 - \beta/2$. Pre uhol ABC tak máme dve vyjadrenia, $\angle ABC = \gamma + \pi/2 = \alpha + \gamma + \pi/2 - \beta/2$. Obe tieto vyjadrenia môžu zároveň platiť iba ak $\alpha = \beta / 2$, čím sme dokázali posledný prípad a tvrdenie teda platí pre celú kružnicu. 
 
@@ -227,7 +225,7 @@ Naučme sa používať Ptolemaiovu vetu na nasledujúcom príklade:
 
 Vezmime štvoruholník ABCD vpísaný do kružnice o polomere $r = 1/2$ tak, že stred kružnice leží na uhlopriečke AC. Použijeme Tálesovu či Euklidovu vetu o stredových a obvodových uhloch a sínusovú vetu, aby sme vypočítali všetky strany a uhlopriečky, potrebné do Ptolemaiovej vety:
 
-<img src="C:\Users\kvasn\Documents\GitHub\Erik\img\Ptolemy_Sum - Copy.png" alt="Ptolemy_Sum - Copy" style="zoom:30%;" />
+<img src="img\Ptolemy_Sum - Copy.png" alt="Ptolemy_Sum - Copy" style="zoom:30%;" />
 $$
 |AC| = 1 \\
 |\angle ABC| = |\angle ADC| = 90° \\
@@ -313,7 +311,7 @@ Majme priamku $g$ a uvažujme takéto zobrazenie $\sigma_g$ Euklidovskej roviny 
 - $X \in g:\quad \sigma_g(X) = X$ 
 - $X \notin g: \quad \sigma_g(X) = Y, d(X, g) = d(Y, g) \and XY \perp g$
 
-<img src="C:\Users\kvasn\Documents\GitHub\Erik\img\spiegelung.png" alt="spiegelung" style="zoom:20%;" />
+<img src="img\spiegelung.png" alt="spiegelung" style="zoom:20%;" />
 
 Takéto zobrazenie sa nazýva zrkadlenie okolo osi $g$.
 
@@ -339,14 +337,14 @@ Izometrií roviny je 5 (zrkadlenie, posunutie, bodová súmernosť, rotácia, po
 
 ## 4. Domáca úloha (nová)
 
-1. Koľko číslic (čitateľ + menovateľ) potrebujeme v racionálnej aproximácii $\sqrt[3]{5}$, aby sme dosiahli presnosť $10^{-k}$?
+1. Koľko číslic (čitateľ + menovateľ) potrebujeme v racionálnej aproximácii $\sqrt[3]{5}$, aby sme dosiahli presnosť $10^{-k}$? **Pozor** v texte o racionálnej aproximácii tretej odmocniny bola chyba a až v tejto verzii je vzorec správne. 
 2. Ako poslať biliardovú guľu do ľavého zadného vrecka odrazom od pravého mantinelu?
 
-![image-20230908132209666](C:\Users\kvasn\Documents\GitHub\Erik\img\snooker.png)
+![image-20230908132209666](img\snooker.png)
 
 3. Máme priamku $g$ a dve kružnice $k_1, k_2$. Zostrojte štvorec ABCD tak, že body A, C ležia na priamke $g$, a body B, D po jednom na kružniciach $k_1, k_2$. Koľko riešení má táto úloha v závislosti od vzájomnej polohy priamky a oboch kružníc?
 
-<img src="C:\Users\kvasn\Documents\GitHub\Erik\img\two_circles.png" alt="two_circles" style="zoom:20%;" />
+<img src="img\two_circles.png" alt="two_circles" style="zoom:20%;" />
 
 
 
