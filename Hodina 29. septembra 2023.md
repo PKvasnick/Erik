@@ -234,6 +234,22 @@ r = \frac{R^2r^{\prime}}{OC_2^2 - r^{\prime 2}}
 $$
 Upozorňujem, že vlastnosť "byt stredom kružnice" sa pri kruhovej inverzii nezachováva. Teda obraz bodu C nie je stredom obrazu kružnice c, preto aj má íné označenie. 
 
+#### Načo to  je dobré
+
+Niekedy je výhodné transformovať kružnce na priamky a kružnice na iné kružnice. Typický príklad je toto:
+
+Aké sú polomery kružníc v postupnosti $C_2, C_3, \dots$, ak polomer kružnice $C$ je 1 a kružnice $C_2$ r?
+
+![Circle_sequence_0](img\Circle_sequence_0.png)
+
+**Riešenie**
+
+sa opiera o kruhovú inverziu okolo červenej kružnice. Je také estetické, že sa človeku ani nechce počítať, pretože to sú samé pravouhlé trojuholn
+
+
+
+![Circle_sequence](img\Circle_sequence.png)
+
 ---
 
 ## 3. Geometria
@@ -271,6 +287,18 @@ Toto budeme dokazovať nabudúce:
 ![three_semicircles](img\three_semicircles.png)
 
 Návod: toto nemusí byť nevyhnutne príklad na kruhovú inverziu, ale môže to byť aj príklad na podobné trojuholníky alebo oboje spolu. 
+
+2. Nájdite a, pre ktoré má funkcia 
+
+$$
+f(x) = \sqrt{ax^2 + x}
+$$
+
+rovnaký definičný obor ako rozsah hodnôt.
+
+3. Vyriešte 
+
+![image-20230929214615231](img\two-circles-and-a-square.png)
 
 ---
 
