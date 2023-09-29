@@ -117,7 +117,7 @@ Už sme mali viac rekurentných vzťahov typu $x_n = f(x_{n-1})$. Členy takejto
 $$
 x_1 = f(x_0)\quad x_2 = f(f(x_0)) \quad x_3 = f(f(f(x_0)))\quad \dots
 $$
-čo nás nabáda skúsiť naštudovať, ako sa správajú takéto iterácie funkcií a za akých okolností k niečomu konvergujú. 
+čo nás nabáda skúsiť naštudovať, ako sa správajú takéto iterácie funkcií a za akých okolností k niečomu konvergujú. Toto je užitočné vedieť napríklad keď potrebujeme riešiť transcendentné rovnice typu $x = a\sin{x}$ a podobne, kde možnosť nájsť riešenie opakovaným dosadzovaním x do výrazu na pravej strane je to najjednoduchšie, čo môžeme skúsiť urobiť. 
 
 **Príklad** 
 
@@ -334,12 +334,13 @@ Toto budeme dokazovať nabudúce:
 ## 4. Domáca úloha (nová)
 
 1. Trojuholník má strany 4 m, 11 m a 8 m. Vypočítajte jeho vnútorné uhly. 
-2. Loď vyplávala z prístavu o 13:00 smerom na sever rýchlosťou 30 km/h. O 15:00 loď upravila kurz o 20° na východ. Ako ďaleko je loď od prístavu o 16:00.
-3. Strana trojuholníka má dĺžku 1. Nájdite obsah zelenej plochy. 
+2. Majme tri rovnobežné priamky f, g, h. Dokážte,že existuje priamka j taká, že pre zrkadlenia okolo priamok f, g, h , j platí $\sigma_h \circ \sigma_g \circ \sigma_f = \sigma_j$ - teda že tri zrkadlenia môžeme nahradiť jediným. Kde leží priamka j?
+3. Majme tri priamky f, g, h, pretínajúce sa v jedinom bode. Dokážte,že existuje priamka j taká, že pre zrkadlenia okolo priamok f, g, h , j platí $\sigma_h \circ \sigma_g \circ \sigma_f = \sigma_j$ - teda že tri zrkadlenia môžeme nahradiť jediným. Kde leží priamka j?
+4. Strana trojuholníka má dĺžku 1. Nájdite obsah zelenej plochy. 
 
 ![equilateral_triangle3](img\equilateral_triangle3.gif)
 
-4. Polomer kružníc je 1. Vypočítajte obsah červenej plochy.
+5. Polomer kružníc je 1. Vypočítajte obsah červenej plochy.
 
 ![equilateral_triangle6](img\three_circles.png)
 
