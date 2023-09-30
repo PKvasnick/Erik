@@ -238,17 +238,50 @@ Upozorňujem, že vlastnosť "byt stredom kružnice" sa pri kruhovej inverzii ne
 
 Niekedy je výhodné transformovať kružnce na priamky a kružnice na iné kružnice. Typický príklad je toto:
 
-Aké sú polomery kružníc v postupnosti $C_2, C_3, \dots$, ak polomer kružnice $C$ je 1 a kružnice $C_2$ r?
+Aké sú polomery kružníc v postupnosti $C_2, C_3, \dots$, ak polomer kružnice $C$ je r=1 a kružnice $C_1$ $r_1$?
 
 ![Circle_sequence_0](img\Circle_sequence_0.png)
 
 **Riešenie**
 
-sa opiera o kruhovú inverziu okolo červenej kružnice. Je také estetické, že sa človeku ani nechce počítať, pretože to sú samé pravouhlé trojuholn
+sa opiera o kruhovú inverziu okolo červenej kružnice. Je také estetické, že sa človeku ani nechce počítať, pretože to sú samé pravouhlé trojuholníky. 
 
 
 
 ![Circle_sequence](img\Circle_sequence.png)
+
+Poďme počítať. 
+
+- Polomer projekčnej kružnice (červenej) je $OT \equiv R =2$. 
+- Polomer veľkej kružnice (so stredom C) je podľa zadania 1 
+- a polomer menšej kružnice so stredom $C_1$ je podľa zadania r. 
+- Polomer kružnice so stredom $C_2$ je $UC_1 \equiv r_2 =1-r_1$.  
+- Obraz kružnice so stredom C je  dotyčnica prechádzajúca bodom T. 
+- Obraz kružnice so stredom $C_1$ je rovnobežka s dotyčnicou prechádzajúca bodom $U^{\prime}$. Platí $OU \cdot OU^{\prime} = R^2 = 4$ a teda 
+
+$$
+OU^{\prime} = 2 + 2r_2^{\prime} = \frac{4}{2r_1} \\
+r_2^{\prime} = \frac{1-r_1}{r_1} = \frac{r_2}{r_1}
+$$
+
+- Ako som už písal, vlastnosť "byť stredom kružnice" sa pri kruhovej inverzii nezachováva, takž obrazy stredov kružníc $C_2^{\prime}, C_3^{\prime}, \dots$ nie sú totožné so stredmi obrazov kružníc $S_2, S_3, \dots$
+- Budeme ešte potrebovať vzdialenosť $OC_2^{\prime} = 1 + \frac{1}{r_1}$.
+- Stredy kružníc $C_2, C_3, \dots$ ležia na kružnici o polomere $\rho = r_1 + r_2/2$.
+
+Teraz už môžeme začať počítať:
+
+Začneme s pravouhlým trojuholníkom $OS_2S_3$. Z Pytagorovej vety máme 
+$$
+OS_3 = \sqrt{ (2 + r_2^{\prime})^2 + (2r_2^{\prime})^2}
+$$
+Trojuholník $OC_2C_3$ je tiež pravouhlý a pretože má spoločný uhol s trojuholníkom $OS_2S_3$, sú si tieto trojuholníky podobné. Preto
+$$
+\frac{C_2C_3}{OC_2} \equiv \frac{r_2 + r_3}{2-r_2} = \frac{2r_2^{\prime}}{OS_3} \equiv \frac{S_2S_3}{OS_3
+}
+$$
+Prostredná rovnosť nám dáva vzťah, z ktorého môžeme vyjadriť $r_3$ v termínoch $r_1$.
+
+Podobne môžeme vyjadriť polomery ďalších kružníc. 
 
 ---
 
