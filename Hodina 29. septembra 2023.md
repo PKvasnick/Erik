@@ -1,4 +1,4 @@
-## Hodina 29. septembra 2023
+## Hodina 30. septembra 2023
 
 Program:
 
@@ -21,6 +21,8 @@ Program:
 Trojuholník má strany 4 m, 11 m a 8 m. Vypočítajte jeho vnútorné uhly. 
 
 **Riešenie**
+
+![image-20231003020138478](C:\Users\kvasn\AppData\Roaming\Typora\typora-user-images\image-20231003020138478.png)
 
 Označme $a=4\,m,\,b=11\,m,\,c=8\,m$. 
 
