@@ -252,7 +252,7 @@ Zvolíme si na kružnici bod P a nakreslíme nejakú kružnicu, ktorej stredom j
 
 Aby sme ale dokázali niečo vypočítať, musíme si veci zjednodušiť: namiesto ľubovoľného bodu P zvolíme za stred kruhovej inverzie vrchol D štvoruholníka. 
 
-![image-20231013154639105](C:\Users\kvasn\Documents\GitHub\Erik\img\Ptolemy_inv_2.png)
+![image-20231013154639105](img\Ptolemy_inv_2.png)
 
 Opäť veľmi nezáleží na tom, okolo akej kružnice invertujeme, ale iba že jej stredom je D. A všetko, čo od inverzie potrebbujeme, je toto:
 $$
@@ -337,7 +337,7 @@ Kompozícia rotácie a posunutia je znova rotácia.
 
 Majme tri po dvojiciach rôznobežné priamky f, g, h, pretínajúce sa v bodoch A, B, C (čierne čiary). Dokážeme, že zobrazenie, zložené zo zrkadlení okolo priamok f, g, h je ekvivalentné posunutému zrkadleniu. 
 
-![image-20231013023815691](C:\Users\kvasn\Documents\GitHub\Erik\img\three_lines_is_SGS.png)
+![image-20231013023815691](img\three_lines_is_SGS.png)
 
 Postupujeme rovnako ako v predchádzajúcom prípade: sérou dvoch otočení prevedieme sústavu priamok na dve rovnobežky a kolmicu na ne. 
 
