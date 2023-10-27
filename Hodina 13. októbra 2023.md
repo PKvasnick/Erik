@@ -406,3 +406,7 @@ Ešte mám nejakú geometriu, a chcel som pohovoriť o dlaždiciach.
 
 Ale dosť hrozí, že už ideme na goniometriu a komplexné čísla. 
 
+Apoloniiove úlohy
+
+
+
