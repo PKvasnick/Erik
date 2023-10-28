@@ -216,7 +216,9 @@ To je zase ľahké pomocou parabol.
 
 ![](img\Apolonius_pbp.png)
 
-Ale s pravidlom a kružítkom to už je o dosť ťažšie.  
+ale prekvapivo ľahké to je aj s pravítkom a kružidlom, pretože nám pomôže rovnoľahlosť. Stačí zostrojiť ľubovoľnú kružnicu, dotýkajúcu sa oboch priamok, a potom pomocou podobnosti stred požadovanej kružnice (presnejšie dvoch):
+
+![](img\Apolonius_pbp_2.png)
 
 **Pomôcka** v Desarguesovom štýle:
 
@@ -249,6 +251,8 @@ Dnes jej hádam bolo dosť.
 ![image-20231027122419371](img\Hw_parallel.png)
 
 3. Nájdite všetky komplexné čísla z také, že $z^3 = 1 + i$. (Príprava na budúce: čo vieme o komplexných číslach?)
+
+   
 
 ---
 
