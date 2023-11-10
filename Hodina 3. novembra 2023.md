@@ -1,4 +1,4 @@
-## Hodina 3. novembra 2023
+## Hodina 10. novembra 2023
 
 Program:
 
@@ -18,58 +18,15 @@ Program:
 
 #### Domáce úlohy v texte
 
-**Príklad 1**
+**Kružnica a dva body**
 
-... Dokážte, že rovnaké tvrdenie platí aj o opačnej kompozícii posunutia a rotácie. 
-
-To tvrdenie je, že príslušné zobrazenie je rotácia.
+Toto je ľahšie, ako sa zdá, a je to výborné cvičenie na Pascalovo rozšírenie Pappusovej šesťuholníkovej vety, ktorú sme spomínali vyššie (bežne sa dá nájsť iné riešeniel). Toto riešenie má čaro projektívnej goemetrie - že začneme hlava-nehlava kresliť kružnice a spájať rôzne body. 
 
 **Riešenie**
 
-Máme zrkadlenia okolo štyroch priamok f, g, h, i. Priamky f, g sú rovnobežné a zobrazenie $\sigma_g \circ \sigma_f$ je posunutie. Priamky h, i sú rôznobežné a zobrazenie $\sigma_i \circ \sigma_h$ je rotácia.  
+Začneme tým, že nakreslíme tri rôzne kružnice, prechádzajúce dvoma zadanými bodmi tak, aby každá pretínala zadanú kružnicu v dvoch bodoch. Dostaneme sériu 6 bodov na kružnici a použijeme Pappusovu vetu pre kužeľosečku: priesečníky spojníc musia ležať na priamke. Potom priesečníky Pappusovej priamky so zadanou kružnicou sú body dotyku na kružnici. 
 
-- Posunieme priamky f, g   tak, aby priesečník priamok h, i ležal na g.
-- Otočíme priamky h, i okolo ich priesečníka P tak, aby sa priamka h stotožnila s g.
-
-Potom 
-$$
-Z = \sigma_i \circ \underbrace{\sigma_h \circ \sigma_g}_{id} \circ \sigma_f = \sigma_i \circ \sigma_f
-$$
-je rotácia okolo priesečníka (posunutej) priamky f  a (otočenej priamky) i - bodu Q. 
-
-![image-20231020133926183](img\posunutie_plus_rotacia.png)
-
-Je poučné všimnúť si, že bod Q je skutočne pevným bodom zobrazenia - v ňom rotácia okolo P kompenzuje posunutie.
-
-**Príklad 2**
-
-Ukážte, že kompozícia dvoch posunutí je tiež posunutie.
-
-**Riešenie**
-
-![image-20231021090858897](img\TwoRotations.png)
-
-Máme dve posunutia, definované zrkadleniami okolo čiernych priamok f, g, h, i. Aby sme mohli zostavu dvoch párov rovnobežiek "rozhýbať", začneme prostrednou dvojicou g a h a otočíme ju okolo priesečníka P o 90°, tak aby h bolo kolmé na i a g na f (modré čiary). 
-
-Dve dvojice kolmíc f, g´ a h´, i otočíme okolo ich priesečníkov Q,  resp. R tak, aby priamky g´´ a h´´ splynuli - teda tak, aby každá prechádzala oboma bodmi Q a R. Zo štyroch zrkadlení tak ostanú iba dve, okolo červených rovnobežiek f´ a i´, ktoré teraz definujú výsledné posunutie. 
-
-Z obrázku je tiež vidno, že výsledné posunutie je vektorovým súčtom pôvodných posunutí.
-
----
-
-**Príklad 3**
-
-Tri bodové zrkadlenia sú ekvivalentné jednému.
-
-**Riešenie**
-
-Tri bodové zrkadlenia budeme reprezentovať šiestimi zrkadleniami okolo po dvojiciach kolmých priamok f, g, h, i,  j, k.  Otočením okolo priesečníkov môžeme zariadiť, aby boli priamky f, h, j a priamky g, i, k rovnobežné. 
-
-Zrkadlenia okolo dvoch navzájom kolmých priamok komutujú, takže môžeme pokojne separovať tri "vodorovné" a tri "zvislé" zrkadlenia. Tri zrkadlenia okolo rovnobežných priamok sú ekvivalentné jednému, ktoré vieme ľahko zostrojiť, a tak nám zostanú dve zrkadlenia okolo navzájom kolmých priamok, čo je výsledné bodové zrkadlenie. 
-
-![image-20231021101130978](img\ThreePunktSpiegel.png)
-
-
+![](img\Apolonius_bbk.png)
 
 #### Regulérna domáca úloha
 
