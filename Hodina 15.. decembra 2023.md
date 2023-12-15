@@ -386,7 +386,7 @@ Návod: U reálnej odmocniny berieme ako hodnotu nezáporné riešenie rovnice $
 ---
 
 3.  Nájdite $\tan{(\alpha + \beta)}$ v termínoch $\tan{\alpha}, \tan{\beta}$.
-4. Riešte rovnicu $2^x + x = 5$.
+4. Je daný bod $Q=[-3,1]$. Vypočítajte polohy stredov všetkých kružníc o polomere $r=\sqrt{20}$ , ktoré prechádzajú počiatkom $O=[0,0]$ a bodom Q.
 
 ---
 
