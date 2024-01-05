@@ -477,5 +477,10 @@ V priemere sa teda vyrobí 12 osobných, 3 nákladné automobily a 4 autobusy.
 Zmes:
 
 - Viac komplexných čísel a goniometrie
-- 
+
+
+$$
+\bar{}
+$$
+
 
