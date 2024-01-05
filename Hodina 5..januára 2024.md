@@ -306,7 +306,7 @@ $$
 $$
 a pozrieť sa, čo sa stane s jednotkovým štvorcom:
 
-![](C:\Users\kvasn\Documents\GitHub\Erik\img\Matrix.png)
+![](img\Matrix.png)
 
 Zväčšenie plochy je dané determinantom matice, teda červený rovnobežník má plochu 1.5-krát väčšiu ako modrý. 
 
