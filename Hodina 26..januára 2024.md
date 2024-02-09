@@ -1,4 +1,4 @@
-## Hodina 26. januára 2024
+## Hodina 2. februára 2024
 
 Program:
 
